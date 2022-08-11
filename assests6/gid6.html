@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <link rel="stylessheets" href="/assests6/styles6/styles6.css">
+<style>
+    body{
+        margin: 0;
+    }
+    .header{
+background-color: brown;
+padding: 70px;
+text-align: center;
+grid-column: 1/4;
+    }
+    .all{
+background-color: hsl(0, 46%, 46%);
+margin-left: 30px ;
+margin-right: 30px;
+    }
+    .boba{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+    }
+    #happy{
+        background-color: rgb(85, 11, 11);
+        padding: 20px;
+        margin-right: 30px;
+    }
+#joy{
+    background-color: rgb(85, 11, 11);
+    padding: 20px;
+    margin-left: 30px ;
+}
+#yut{
+    background-color: rgb(85, 11, 11);
+   padding: 20px;
+}
+    .aside{
+background: rgb(68, 16, 16);
+    }
+    section{
+    background-color: rgb(170, 58, 58);
+    }
+    .general{
+        margin-bottom: 160px;
+    }
+    @media screen and (min-width: 1024px) {
+        .divv{
+background-color: rgb(99, 13, 13);
+grid-column: 1/4;
+    }
+    .a{
+        margin: 30px;
+    padding: 1%;
+    width: 432px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    }
+    .main{
+        display: grid;
+grid-template-columns: 2fr 1fr;
+grid-template-rows: 25% 1fr 25%;
+height: 100vh;
+text-align: center;
+color: azure;
+gap: 1rem;
+    }
+    }
+    @media screen and (max-width: 1023px) {
+        .divv{
+display: none;
+    }
+    .a{
+        margin: 30px;
+    padding: 1%;
+    width: 432px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    }
+    .aside{
+        height: 30vh;
+    }
+    }
+    .footer{
+display: grid;
+justify-items: center;
+align-items: center;
+grid-template-columns: repeat(4, 1fr);
+height: 100%;
+    }
+</style>
+</head>
+<body>
+    <main class="main">
+    <header class="header"> <h1>Шапка страницы</h1></header>
+        <section>
+          <div class="general"> <h2>Основная часть</h2></div>
+            <div class="all">
+                <div class="boba">
+                    <p class="section_extra-mini" id="happy"> Счастье </p>
+                    <p class="section_extra-mini" id="joy"> Радость </p>
+</div>
+    <p class="section_extra-max" id="yut"> Уют </p>
+</div>
+</section>
+<aside class="aside"> 
+    Что-то сбоку
+</aside>
+<div class="divv"> <footer class="footer">
+    <a class="a">Футер1</a>
+    <a class="a">Футер2</a>
+    <a class="a">Футер3</a>
+    <a class="a">Футер4</a>
+</footer>
+</div>
+</main>
+</body>
+</html>
